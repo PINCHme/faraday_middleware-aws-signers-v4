@@ -7,9 +7,9 @@ module AwsSignersV4Ext
 end
 
 class Aws::Signers::V4
-  unless Aws::Signers::V4 < AwsSignersV4Ext
-    def signed_headers(request)
-      super.downcase
-    end
-  end
+  # unless Aws::Signers::V4 < AwsSignersV4Ext
+  #   def signed_headers(request)
+  #     super.downcase
+  #   end
+  # end
 end
